@@ -18,7 +18,7 @@ rustls = { version = "0.23.5", default-features = false, features = ["std"] }
 pki-types = { package = "rustls-pki-types", version = "1" }
 
 [features]
-default = ["logging", "tls12", "aws_lc_rs"]
+default = ["logging", "tls12", "ring"]
 aws_lc_rs = ["rustls/aws_lc_rs"]
 aws-lc-rs = ["aws_lc_rs"] # Alias because Cargo features commonly use `-`
 early-data = []
